@@ -1,0 +1,134 @@
+
+$color-black: #303030;
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+.our-works {
+    padding: 65px;
+    padding-bottom: 128px;
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 18px;
+        letter-spacing: 4px;
+        color: $color-black;
+        font-weight: 600;
+        margin-bottom: 35px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        max-width: 1040px;
+        font-size: 86px;
+        line-height: 90px;
+        color: #000000;
+        margin-bottom: 105px;
+        text-align: center;
+        text-transform: uppercase;
+        align-self: center;       
+    } 
+}
+    .slider {
+        padding-left: 136px;
+        position: relative;
+        &__item {
+            max-width: 440px;  
+            height: 400px;    
+            opacity: 0.3;
+            position: relative;
+            transition-property: opacity;
+            transition-duration: 0.3s;
+            &:hover .slider__description  {
+                opacity: 1;
+            }   
+            &:not(:last-child) {
+                margin-right: 45px;
+            }  
+            &.slick-active {
+                opacity: 1;
+            }  
+        }
+        &__description {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            position: absolute;
+            padding-bottom: 30px;
+            padding-left: 28px;
+            max-width: 440px;            
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+           
+            transition-property: opacity;
+            transition-duration: 0.3s;
+            &:hover {
+                background-color: rgda(27, 241, 173, 0.9);
+            }
+            & > h4 {                  
+                font-size: 20px;
+                letter-spacing: 4px;
+                line-height: 24px;
+                max-width: 300px;
+                color: #ffffff;
+                margin-bottom: 12px;
+            }
+            & > span {
+                font-size: 12px;
+                letter-spacing: 2px;
+                line-height: 24px;
+                font-weight: 600;
+                color: #ffffff;
+            }
+        }
+    }
+        .slick-arrow {
+                font-size: 0;
+                padding: 0;
+                border: none;
+                background: transparent;
+                cursor: pointer;
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                bottom: 0;
+        }
+        .slick-arrow::before {
+            content: url(../img/arrow.svg);
+        }
+        .slick-prev { 
+            left: 20px;
+        }    
+        .slick-next {
+            transform: rotate(180deg);
+            right: 20px;
+        }
+    
+
+    
+
+
+        
+    
+
+    
+    
+
+
+
+
+
+          
